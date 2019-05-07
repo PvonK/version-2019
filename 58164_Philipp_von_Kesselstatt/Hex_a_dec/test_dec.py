@@ -17,8 +17,12 @@ class TestDecimal(unittest.TestCase):
         self.assertEqual(result, 219930)
 
     def test_decimal_4(self):
-        result = deca('ff')
+        result = deca('FF')
         self.assertEqual(result, 255)
+
+    def test_decimal_5(self):
+        result = deca('10')
+        self.assertEqual(result, 16)
 
 if __name__ == '__main__':
     unittest.main()
